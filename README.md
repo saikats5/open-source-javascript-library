@@ -30,3 +30,10 @@ console.log(test.random());
 ESC key
 :wq
 node index.js
+
+GITHUB TAG
+git tag 1.0.0
+git push --tags
+
+git diff
+
