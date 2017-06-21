@@ -1,0 +1,101 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\Saikat\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'opensourcejslib' ]
+2 info using npm@3.10.3
+3 info using node@v7.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData opensourcejslib
+8 silly fetchNamedPackageData opensourcejslib
+9 silly mapToRegistry name opensourcejslib
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'opensourcejslib',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'opensourcejslib',
+12 silly mapToRegistry   name: 'opensourcejslib',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/opensourcejslib
+14 verbose request uri https://registry.npmjs.org/opensourcejslib
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 9:01:34 AM
+17 verbose request using bearer token for auth
+18 verbose request id bcfbd37d33ab5a7a
+19 verbose etag W/"5949e0e6-8e6"
+20 verbose lastModified Wed, 21 Jun 2017 02:58:46 GMT
+21 http request GET https://registry.npmjs.org/opensourcejslib
+22 http 304 https://registry.npmjs.org/opensourcejslib
+23 verbose headers { server: 'nginx/1.10.3',
+23 verbose headers   'last-modified': 'Wed, 21 Jun 2017 02:58:46 GMT',
+23 verbose headers   etag: '"5949e0e6-8e6"',
+23 verbose headers   'cache-control': 'max-age=300',
+23 verbose headers   'accept-ranges': 'bytes',
+23 verbose headers   date: 'Wed, 21 Jun 2017 03:31:19 GMT',
+23 verbose headers   via: '1.1 varnish',
+23 verbose headers   connection: 'keep-alive',
+23 verbose headers   'x-served-by': 'cache-sin18021-SIN',
+23 verbose headers   'x-cache': 'MISS',
+23 verbose headers   'x-cache-hits': '0',
+23 verbose headers   'x-timer': 'S1498015880.742432,VS0,VE140',
+23 verbose headers   vary: 'Accept-Encoding' }
+24 silly get cb [ 304,
+24 silly get   { server: 'nginx/1.10.3',
+24 silly get     'last-modified': 'Wed, 21 Jun 2017 02:58:46 GMT',
+24 silly get     etag: '"5949e0e6-8e6"',
+24 silly get     'cache-control': 'max-age=300',
+24 silly get     'accept-ranges': 'bytes',
+24 silly get     date: 'Wed, 21 Jun 2017 03:31:19 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-sin18021-SIN',
+24 silly get     'x-cache': 'MISS',
+24 silly get     'x-cache-hits': '0',
+24 silly get     'x-timer': 'S1498015880.742432,VS0,VE140',
+24 silly get     vary: 'Accept-Encoding' } ]
+25 verbose etag https://registry.npmjs.org/opensourcejslib from cache
+26 verbose get saving opensourcejslib to C:\Users\Saikat\AppData\Roaming\npm-cache\registry.npmjs.org\opensourcejslib\.cache.json
+27 verbose correctMkdir C:\Users\Saikat\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+28 silly install normalizeTree
+29 silly loadCurrentTree Finishing
+30 silly loadIdealTree Starting
+31 silly install loadIdealTree
+32 silly cloneCurrentTree Starting
+33 silly install cloneCurrentTreeToIdealTree
+34 silly cloneCurrentTree Finishing
+35 silly loadShrinkwrap Starting
+36 silly install loadShrinkwrap
+37 silly loadShrinkwrap Finishing
+38 silly loadAllDepsIntoIdealTree Starting
+39 silly install loadAllDepsIntoIdealTree
+40 silly rollbackFailedOptional Starting
+41 silly rollbackFailedOptional Finishing
+42 silly runTopLevelLifecycles Starting
+43 silly runTopLevelLifecycles Finishing
+44 silly install printInstalled
+45 verbose stack Error: Refusing to install opensourcejslib as a dependency of itself
+45 verbose stack     at checkSelf (C:\Users\Saikat\AppData\Roaming\npm\node_modules\npm\lib\install\validate-args.js:53:14)
+45 verbose stack     at Array.<anonymous> (C:\Users\Saikat\AppData\Roaming\npm\node_modules\npm\node_modules\slide\lib\bind-actor.js:15:8)
+45 verbose stack     at LOOP (C:\Users\Saikat\AppData\Roaming\npm\node_modules\npm\node_modules\slide\lib\chain.js:15:14)
+45 verbose stack     at chain (C:\Users\Saikat\AppData\Roaming\npm\node_modules\npm\node_modules\slide\lib\chain.js:20:5)
+45 verbose stack     at C:\Users\Saikat\AppData\Roaming\npm\node_modules\npm\lib\install\validate-args.js:16:5
+45 verbose stack     at C:\Users\Saikat\AppData\Roaming\npm\node_modules\npm\node_modules\slide\lib\async-map.js:52:35
+45 verbose stack     at Array.forEach (native)
+45 verbose stack     at C:\Users\Saikat\AppData\Roaming\npm\node_modules\npm\node_modules\slide\lib\async-map.js:52:11
+45 verbose stack     at Array.forEach (native)
+45 verbose stack     at asyncMap (C:\Users\Saikat\AppData\Roaming\npm\node_modules\npm\node_modules\slide\lib\async-map.js:51:8)
+46 verbose cwd D:\Tutorial\My Project\opensourcejslib
+47 error Windows_NT 6.1.7601
+48 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\Saikat\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "install" "opensourcejslib"
+49 error node v7.10.0
+50 error npm  v3.10.3
+51 error code ENOSELF
+52 error Refusing to install opensourcejslib as a dependency of itself
+53 error If you need help, you may report this error at:
+53 error     <https://github.com/npm/npm/issues>
+54 verbose exit [ 1, true ]
