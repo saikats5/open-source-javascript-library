@@ -37,3 +37,7 @@ git push --tags
 
 git diff
 
+version name 1.2.3
+1 --> Major changes which can break the code
+2 --> Enhancement of code or additional features
+3 --> Bugfix
