@@ -1,6 +1,6 @@
 var cityNames = require("./city.json");
 var uniqueRandomArray = require("unique-random-array");
-modeule.exports = { 
+module.exports = { 
 	all : cityNames,
 	random : uniqueRandomArray(cityNames)
 }
