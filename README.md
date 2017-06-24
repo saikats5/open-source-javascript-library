@@ -43,3 +43,8 @@ version name 1.2.3
 3 --> Bugfix
 
 npmjs.im/opensourcejslib //to directly go to library
+
+npm publish --tag beta //publishing beta version on npm
+
+npm install libname
+npm install libname@beta
