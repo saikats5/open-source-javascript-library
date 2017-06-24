@@ -48,3 +48,5 @@ npm publish --tag beta //publishing beta version on npm
 
 npm install libname
 npm install libname@beta
+
+npm install -g semantic-release-cli
