@@ -49,4 +49,19 @@ npm publish --tag beta //publishing beta version on npm
 npm install libname
 npm install libname@beta
 
-npm install -g semantic-release-cli
+npm install -g semantic-release-cli(run in command prompt as adminstrator) //ignore
+semantic-release-cli setup(git bash) //ignore
+
+npm i -D istanbul
+"test:single":"istanbul cover -x *.test.js node_modules/mocha/bin/_mocha -- -R spec src/index.test.js"
+
+npm i -D babel-cli
+
+"prebuild": "rm -rf dist" //delete the folder before build
+"build": "babel --out-dir dist --ignore *.test.js src" //create babel directory
+
+npm i -D babel-preset-es2015 babel-preset-stage-2 //to transpile the es6 files inside dist folder
+
+npm i -D nyc
+npm i -D babel-register
+
