@@ -65,3 +65,7 @@ npm i -D babel-preset-es2015 babel-preset-stage-2 //to transpile the es6 files i
 npm i -D nyc
 npm i -D babel-register
 
+//to make nyc work, the code should be written in below format
+"test": "mocha src/index.test.js --compilers js:babel-register"
+"watch:test": "npm t -- -w"
+"cover":"nyc npm t"

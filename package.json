@@ -1,11 +1,13 @@
 {
   "name": "opensourcejslib",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "test": "mocha src/index.test.js -w",
-    "test:single": "istanbul cover -x *.test.js node_modules/mocha/bin/_mocha -- -R spec src/index.test.js",
+    "test": "mocha src/index.test.js --compilers js:babel-register",
+    "watch:test": "npm t -- -w",
+    "cover":"nyc npm t",
+    "test:single": "nyc cover -x *.test.js node_modules/mocha/bin/_mocha -- -R spec src/index.test.js x`",
     "prebuild": "rm -rf dist",
     "build": "babel --copy-files --out-dir dist --ignore *.test.js src"
   },
